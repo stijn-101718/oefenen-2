@@ -1,8 +1,5 @@
-let completeNaam = "Stijn";
-let hobbies = "voetbal, gamen, lezen";
-let series = "The Last of Us, Breaking Bad, La Casa de Papel";
+let tekst = "In 'S-Hertogenbosch sprak hij 's nachts de beroemde woorden: \"this, too high for my wit, i prefer to omit\".'";
 
-let mijnIntroductie = `Mijn naam is ${completeNaam}. Mijn hobby's zijn ${hobbies}. Mijn favoriete series zijn ${series}.`;
-
-console.log(mijnIntroductie);
+console.log(tekst);
+console.log("Aantal karakters:", tekst.length);
 
