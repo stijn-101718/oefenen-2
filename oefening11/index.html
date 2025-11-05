@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script>
+    'use strict';
+    function controleer() {
+        let controleer = "Goat"
+      let waarde1 = document.getElementById("invoer1").value;
+      let waarde2 = document.getElementById("invoer2").value;
+      if (waarde1 + waarde2 == "") {
+        (document.getElementById("uitvoer").innerHTML = "Niks ingevuld");
+      } else if 
+       ( document.getElementById("uitvoer").innerHTML = `Mijn naam is ${waarde1}<br>En ik woon in ${waarde2}`);
+      } 
+
+
+
+
+    
+
+
+
+  </script>
+</head>
+<body>
+  Naam: <input type="text" id="invoer1" required/><br/><br/>
+  Woonplaats: <input type="text" id="invoer2" required/><br/><br/>
+  <button id="knop" onclick="controleer()">KLIK</button><br/><br/>
+  <div id="uitvoer"> <br></div>
+</body>
+</html>
