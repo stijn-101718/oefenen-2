@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+prijs van artikel: <input id="invoer1" type="number" required> <br>
+aantal van artikelen: <input id="invoer2"  type="number" required> <br>
+<button id="knop" onclick="controleer()"> bereken</button>
+
+
+<script>
+
+  function controleer() {
+  const invoer1 = Number (document.getElementById("invoer1").value);
+  const invoer2 = Number (document.getElementById("invoer2").value);
+  const Totaal = (invoer1 * invoer2);
+  document.getElementById("bedrag").innerHTML = "Totaal prijs:" + "$" + Totaal;
+  }
+
+
+
+
+
+</script>
+
+<div id="bedrag"></div>
+
+
+</body>
+</html>
