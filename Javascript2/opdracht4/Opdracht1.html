@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+<div id="printen"></div>
+
+<script>
+const getal = Number(prompt("Typ een getal:"));
+const el = document.getElementById("printen");
+const kleuren = ['red','orange','green','blue','purple','teal'];
+
+for (let i = 1; i <= getal; i++) {
+  const item = document.createElement('div');
+  item.textContent = "dit is div " + i;
+  item.style.backgroundColor  = kleuren[(i - 1) % kleuren.length]; // herhaalt kleuren als getal groter is
+  el.appendChild(item);
+}
+</script>
+    
+</body>
+</html>
