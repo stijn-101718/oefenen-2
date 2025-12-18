@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="output"></div>
+
+    
+
+<script>
+    const Continent_landen = {
+        europa: ["nederland", "Belgie"],
+        Zuid_Amerika: ["Panama", "Mexico"],
+        Azie: ["Japan", "Korea"],
+        Afrika:  ["Zuid-afrika", "Nigeria"]
+    };
+
+    const element = document.getElementById("output");
+
+    for (let [continent, landen] of Object.entries(Continent_landen)) {
+        element.innerHTML += `<h3>${continent}</h3>`;
+        element.innerHTML += `<ul>`;
+        
+        for (let land of landen) {
+            element.innerHTML += `<li>${land}</li>`;
+        }
+        
+        element.innerHTML += `</ul>`;
+    }
+
+</script>
+
+
+</body>
+</html>

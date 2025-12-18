@@ -11,19 +11,22 @@
 
     
 
-    <script type="text/javascript">
-        window.onload = function() {
+<script>
+    window. onload = function() {
+        for (let i = 0; i < 5; i++) {
             const canvas = document.createElement("canvas");
+            canvas.width = 300;
+            canvas.height = 150;
             const ctx = canvas.getContext("2d");
             ctx.fillStyle = 'rgb(0, 255, 0)';
             ctx.beginPath();
-            ctx.arc(100, 75, 50, 0, 2 * Math.PI);
+            const radius = 20 + (i * 10);
+            ctx.arc(100, 75, radius, 0, 2 * Math.PI);
+            
             ctx.fill();
             document.body.appendChild(canvas);
-
-
         }
-
-    </script>
+    }
+</script>
 </body>
 </html>
