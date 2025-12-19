@@ -8,23 +8,28 @@
 <body>
     
 
+    <input id="nummer" type="number" required placeholder="Vul een nummer in"> <br>
+    <button id="verzend" type="submit" onclick="rekenen()">reken uit</button>
+
 
     <script>
 
 
-function somEven() {
-    let getallen = [1, 2, 3, 4, 5, 6, 7, 8];
+function rekenen(){
+    let input = document.getElementById("nummer")
+    let getalvan = input. value
+    console.log(getalvan)
 
-    let evengetallen = getallen. filter(getal => getal % 2 === 0);
-    let som = evengetallen.reduce((totaal, getal) => totaal + getal, 0);
 
-    console.log(som);  // Print:  20
-    
-    // Tel alleen de EVEN getallen op (2, 4, 6, 8)
-    // Print de som uit
+
+
+
+
 }
 
-somEven();
+
+
+
 
     </script>
 </body>
