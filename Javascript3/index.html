@@ -8,24 +8,31 @@
 <body>
     
 
-    <input id="nummer" type="number" required placeholder="Vul een nummer in"> <br>
-    <button id="verzend" type="submit" onclick="rekenen()">reken uit</button>
+    <input id="getal1" type="number" required placeholder="getal1"> <br>
+    <input id="getal2" type="number" required placeholder="getal2"> <br>
+    <button id="verzend" type="submit" onclick="optellen()">tel op</button>
 
 
     <script>
 
+        function optellen() {
+            let getal1 = document.getElementById("getal1")
+            let getal2 = document.getElementById("getal2")
 
-function rekenen(){
-    let input = document.getElementById("nummer")
-    let getalvan = input. value
-    console.log(getalvan)
-
-
-
+            let antwoord1 = Number(getal1. value);
+            let antwoord2 = Number(getal2. value);
 
 
+            console.log(antwoord1 + antwoord2)
 
-}
+
+
+        }
+
+
+
+
+
 
 
 
